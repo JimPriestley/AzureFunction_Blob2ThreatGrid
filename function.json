@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "files/{name}",
+      "connection": "function0fc969919905_STORAGE"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "outqueue",
+      "connection": "function0fc969919905_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
